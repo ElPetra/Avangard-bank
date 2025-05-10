@@ -1,0 +1,138 @@
+.ContactsPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../../../assets/images/Avangard_Bank_2.png") center/cover no-repeat;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color-overlay-dark);
+}
+
+.content {
+  position: relative;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 31px 10px 29px 32px;
+  max-width: 1180px;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  gap: 25px;
+}
+
+.contactsBlock {
+  margin-top: 11px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.contactsInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+}
+
+.contactsItem {
+  min-width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.contactsTitle {
+  margin-top: 31px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #001a34;
+}
+
+.contactsBlockTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #001a34;
+}
+
+.phone {
+  font-size: 16px;
+  font-weight: bold;
+  color: #001a34;
+}
+
+.email {
+  font-size: 16px;
+  color: #212529;
+  cursor: pointer;
+}
+
+.callFrom {
+  font-size: 16px;
+  color: #001a34;
+  opacity: 0.5;
+}
+
+.backBtn {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  top: 8px;
+  left: 6px;
+  cursor: pointer;
+}
+
+.back {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffd600;
+}
+
+@media (max-width: 1160px) {
+  .content {
+    padding: 21px 10px 19px 22px;
+    max-width: 900px;
+    gap: 15px;
+  }
+
+  .contactsTitle {
+    margin-top: 21px;
+    font-size: 22px;
+  }
+
+  .contactsBlockTitle {
+    font-size: 16px;
+  }
+
+  .phone,
+  .email {
+    font-size: 14px;
+  }
+
+  .callFrom {
+    font-size: 12px;
+  }
+
+  .contactsInfo {
+    gap: 25px;
+  }
+}

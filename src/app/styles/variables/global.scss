@@ -1,0 +1,40 @@
+// здесь будут переменные для глобальных стилей
+
+:root {
+  // Шрифты
+  --font-family-main: roboto, "Times New Roman", serif;
+  --font-open-sans: "Open Sans Bold", "Times New Roman", serif;
+  --font-open-lato: lato, "Times New Roman", serif;
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+  // Цвета
+  --primary-color-yellow: #ffd600;
+  --primary-color-light-yellow: #fff9c4;
+  --primary-color-white: #fff;
+  --primary-color-black: #000;
+  --primary-color-gray: #e0e0e0;
+  --primary-color-light-gray: #fafafa;
+  --primary-color-darkgray: #888;
+  --primary-color-light-rouse: #f8f1ff;
+  --primary-color-overlay: #00000020;
+  --primary-color-overlay-dark: #000000a5;
+  --primary-color-error: #f2453d;
+  --primary-color-almost-black: #212529;
+
+
+  // Размеры
+  --navbar-height: 80px;
+
+  // Радиуса
+  --primary-border-extra-small: 2px;
+  --primary-border-small: 8px;
+  --primary-border-medium: 20px;
+
+  // Внешние отступы
+  --margin50: 60px;
+}

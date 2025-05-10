@@ -1,0 +1,22 @@
+.clinets__panel_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  &_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &_right {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-right: 30px;
+    }
+  }
+}

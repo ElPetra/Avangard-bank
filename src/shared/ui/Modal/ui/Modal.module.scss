@@ -1,0 +1,52 @@
+.overlay {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(112 110 110 / 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent {
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding-top: 88px;
+  padding-bottom: 78px;
+  max-width: 860px;
+  width: 100%;
+  background: white;
+  z-index: 100;
+}
+.clear {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  cursor: pointer;
+}
+.containerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media (max-width: 992px) {
+  .modalContent {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    max-width: 650px;
+  }
+}

@@ -1,0 +1,98 @@
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lineContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.connectorWrapper {
+  position: relative;
+  width: 90%;
+  height: 4px;
+  background-color: lightgray;
+  border-radius: 2px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.connector {
+  position: absolute;
+  height: 100%;
+  background-color: lightgray;
+  border-radius: 2px;
+}
+
+.filled {
+  background-color: yellow;
+}
+
+.additional {
+  left: 100%;
+  width: 100%;
+}
+
+.circles {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  border-radius: 50%;
+  background-color: lightgray;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.completed {
+  background-color: yellow;
+}
+
+.label {
+  font-size: 14px;
+  text-align: center;
+}
+
+.circle1 {
+  left: 5%;
+}
+
+.circle2 {
+  left: 28%;
+}
+
+.circle3 {
+  left: 50%;
+}
+
+.circle4 {
+  left: 69%;
+  transform: translateX(50%);
+}
+
+.circle2ForgotPassword {
+  left: 34%;
+}
+
+.circle3ForgotPassword {
+  left: 65%;
+}

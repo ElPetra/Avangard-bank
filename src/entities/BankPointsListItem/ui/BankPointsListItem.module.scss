@@ -1,0 +1,33 @@
+.BankPointsListItem {
+    display: flex;
+    font-size: var(--font-size-m);
+    color: #212529;
+    padding: 16px;
+    gap: 24px;
+    .leftSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rightSection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .name {
+            font-weight: bold;
+        }
+        .time {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .working {
+                color: green;
+            }
+            .notWorking {
+                color: red;
+            }
+        }
+    }
+}

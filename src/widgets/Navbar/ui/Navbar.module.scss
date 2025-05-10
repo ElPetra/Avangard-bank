@@ -1,0 +1,23 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  margin-left: auto;
+
+  img,
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.mainLink {
+  margin-right: 24px;
+}

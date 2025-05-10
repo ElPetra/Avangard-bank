@@ -1,0 +1,147 @@
+.CardItem {
+  display: flex;
+
+  &.flexDirection-row {
+    flex-direction: row;
+  }
+
+  &.flexDirection-column {
+    flex-direction: column;
+  }
+
+  &.gap-xs {
+    gap: 8px;
+  }
+
+  &.gap-s {
+    gap: 16px;
+  }
+
+  &.gap-sm {
+    gap: 37px;
+  }
+
+  &.gap-m {
+    gap: 79px;
+  }
+
+  &.gap-l {
+    gap: 131px;
+  }
+
+  &.alignItems-center {
+    align-items: center;
+  }
+
+  &.alignItems-flex-start {
+    align-items: flex-start;
+  }
+
+  &.alignItems-flex-end {
+    align-items: flex-end;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &.space-center {
+    justify-content: center;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.flex-25 {
+    flex: 0 1 25%;
+  }
+
+  &.flex-33-33 {
+    flex: 0 1 33.33%;
+  }
+
+  &.flex-50 {
+    flex: 0 1 50%;
+  }
+
+  &.flexGrow {
+    flex: 1 1 100%;
+  }
+
+  &.bgColor-none {
+    background: none;
+  }
+
+  &.bgColor-transparent {
+    background: transparent;
+  }
+
+  &.bgColor-white {
+    background: var(--primary-color-white);
+  }
+
+  &.bgColor-black {
+    background: var(--primary-color-black);
+  }
+
+  &.bgColor-gray {
+    background: var(--primary-color-gray);
+  }
+
+  &.bgColor-yellow {
+    background: var(--primary-color-yellow);
+  }
+
+  &.bgColor-light-yellow {
+    background: var(--primary-color-light-yellow);
+  }
+
+  &.borderRadius-extra-small {
+    border-radius: var(--primary-border-extra-small);
+  }
+
+  &.borderRadius-small {
+    border-radius: var(--primary-border-small);
+  }
+
+  &.borderRadius-medium {
+    border-radius: var(--primary-border-medium);
+  }
+
+  &.padding {
+    padding: 40px;
+  }
+
+  &.border-solidWhite {
+    border: 1px solid var(--primary-color-white);
+  }
+
+  &.border-solidBlack {
+    border: 1px solid var(--primary-color-black);
+  }
+}
+
+@media (max-width: 992px) {
+  .CardItem {
+    &.padding {
+      padding: 10px;
+    }
+
+    &.gap-sm {
+      gap: 5px;
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  .CardItem {
+    &.gap-xs {
+      gap: 0;
+    }
+  }
+}

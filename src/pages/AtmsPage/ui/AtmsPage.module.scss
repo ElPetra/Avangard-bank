@@ -1,0 +1,142 @@
+.AtmsPage {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    background: url("../../../assets/images/Avangard_Bank_1.png") center/cover no-repeat;
+    .overlay {
+        background-color: black;
+        opacity: 0.75;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: [filter] 32vw [map] 1fr;
+        z-index: 2;
+        color: var(--primary-color-black);
+        position: relative;
+
+        .button {
+            position: absolute;
+            top: 92px;
+            left: 32vw;
+            border: 1px solid #cac4d0;
+            border-radius: 8px;
+            height: 44px;
+            background-color: var(--primary-color-white);
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 7px;
+            .buttonInside {
+                display: flex;
+                line-height: 24px;
+                margin-right: 16px;
+                .buttonIcon {
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: var(--primary-color-white);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        animation: slide-to-right 1s ease-out;
+
+        .filterCont {
+            position: relative;
+            .filter {
+                height: 92px;
+                border: black 1px solid;
+                padding-left: 32px;
+            }
+            .magnifier {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 34px;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .list {
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .sectionList {
+            overflow-y: auto;
+            flex-grow: 1;
+            .sections {
+                border-bottom: 1px solid #eeeeee;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 22px 0;
+                b {
+                    font-size: 14px;
+                    font-weight: bold;
+                    display: block;
+                }
+                h6 {
+                    color: #ffcc00;
+                    font-size: 32px;
+                    height: 24px;
+                }
+                .chapterList {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    cursor: not-allowed;
+                    div {
+                        font-size: 16px;
+                        display: flex;
+                        align-items: center;
+                        p.icon {
+                            height: 56px;
+                            width: 56px;
+                            min-height: 56px;
+                            min-width: 56px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .last {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .image {
+        height: calc(100vh - 80px);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes slide-to-right {
+    0% {
+        transform: translate(-100%, 0);
+    }
+
+    100% {
+        transform: none;
+    }
+}

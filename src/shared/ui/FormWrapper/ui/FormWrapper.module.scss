@@ -1,0 +1,12 @@
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 2;
+  padding: 15px 20px;
+  max-width: 855px;
+  min-height: 551px;
+  background: var(--primary-color-white);
+  border-radius: var(--primary-border-small);
+}

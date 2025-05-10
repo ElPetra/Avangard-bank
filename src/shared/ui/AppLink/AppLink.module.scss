@@ -1,0 +1,35 @@
+.AppLink {
+  position: relative;
+  color: var(--primary-color-white);
+
+  &.underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &.underline:hover::after {
+    width: 100%;
+  }
+
+  &.underlineYellow::after {
+    background-color: var(--primary-color-yellow);
+  }
+
+  &.color-black {
+    color: var(--primary-color-black);
+  }
+
+  &.color-gray {
+    color: var(--primary-color-darkgray);
+  }
+
+  &.active.underline::after {
+    width: 100%;
+    background-color: var(--primary-color-yellow);
+  }
+}

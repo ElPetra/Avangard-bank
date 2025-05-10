@@ -1,0 +1,167 @@
+.Card {
+  display: flex;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &.space-center {
+    justify-content: center;
+  }
+
+  &.center {
+    align-items: center;
+  }
+
+  &.left {
+    align-items: flex-start;
+  }
+
+  &.right {
+    align-items: flex-end;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.extra-small-border-radius {
+    border-radius: var(--primary-border-extra-small);
+  }
+
+  &.small-border-radius {
+    border-radius: var(--small-border-radius);
+  }
+
+  &.medium-border-radius {
+    border-radius: var(--medium-border-radius);
+  }
+
+  &.none-border-radius {
+    border-radius: 0;
+  }
+
+  &.none-padding {
+    padding: 0;
+  }
+
+  &.small-padding {
+    padding: 16px;
+  }
+
+  &.medium-padding {
+    padding: 24px;
+  }
+
+  &.large-padding {
+    padding: 32px;
+  }
+
+  &.gap-small {
+    gap: 16px;
+  }
+
+  &.gap-medium {
+    gap: 79px;
+  }
+
+  &.gap-large {
+    gap: 131px;
+  }
+
+  &.color-white {
+    color: var(--primary-color-white);
+  }
+
+  &.color-black {
+    color: var(--primary-color-black);
+  }
+
+  &.color-yellow {
+    color: var(--primary-color-yellow);
+  }
+
+  &.bg-color-none {
+    background: none;
+  }
+
+  &.bg-color-white {
+    background: var(--primary-color-white);
+  }
+
+  &.bg-color-light-yellow {
+    background: var(--primary-color-light-yellow);
+  }
+
+  &.marginTop85 {
+    margin-top: 85px;
+  }
+
+  &.marginTop100 {
+    margin-top: 100px;
+  }
+
+  &.marginTop120 {
+    margin-top: 120px;
+  }
+
+  &.marginBottom15 {
+    margin-bottom: 15px;
+  }
+
+  &.marginBottom20 {
+    margin-bottom: 20px;
+  }
+
+  &.marginBottom40 {
+    margin-bottom: 40px;
+  }
+
+  &.marginBottom60 {
+    margin-bottom: 60px;
+  }
+
+  &.marginBottom85 {
+    margin-bottom: 85px;
+  }
+
+  &.marginBottom100 {
+    margin-bottom: 100px;
+  }
+
+  &.marginBottom120 {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Card {
+    &.marginTop120 {
+      margin-top: 60px;
+    }
+
+    &.marginTop100 {
+      margin-top: 50px;
+    }
+
+    &.marginTop85 {
+      margin-top: 40px;
+    }
+
+    &.marginBottom120 {
+      margin-bottom: 60px;
+    }
+
+    &.gap-large {
+      gap: 50px;
+    }
+
+    &.gap-medium {
+      gap: 25px;
+    }
+  }
+}

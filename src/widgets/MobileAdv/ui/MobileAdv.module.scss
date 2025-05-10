@@ -1,0 +1,30 @@
+.mobileAdv {
+  position: absolute;
+  right: 39px;
+  bottom: 54px;
+  width: 350px;
+  color: var(--primary-color-white);
+
+  &-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &-links {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 992px) {
+  .mobileAdv {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    max-width: 300px;
+
+    &-title {
+      margin-bottom: 10px;
+    }
+  }
+}

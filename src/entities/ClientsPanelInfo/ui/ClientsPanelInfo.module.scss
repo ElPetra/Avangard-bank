@@ -1,0 +1,72 @@
+.clinets__panel_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &_left,
+  &_right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &_right {
+    div {
+      margin-bottom: 10px;
+    }
+
+    button {
+      align-self: center;
+    }
+  }
+
+  &_field {
+    width: 343px;
+    max-height: 76px;
+    padding: 12px;
+    font: var(--font-m);
+    border: 1px solid var(--primary-color-darkgray);
+  }
+
+  @media (max-width: 1300px) {
+    &_right {
+      div {
+        margin-bottom: 0;
+      }
+    }
+
+    &_field {
+      max-width: 300px;
+      max-height: 60px;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    &_field {
+      max-width: 250px;
+      padding: 5px;
+    }
+  }
+
+  @media (max-height: 785px) {
+    &_left,
+    &_right {
+      gap: 4px;
+      margin-bottom: auto;
+    }
+
+    &_field {
+      max-width: 300px;
+      max-height: 60px;
+      padding: 10px;
+    }
+  }
+
+  @media (max-height: 600px) {
+    &_field {
+      max-width: 250px;
+      padding: 5px;
+    }
+  }
+}

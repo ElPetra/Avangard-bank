@@ -1,0 +1,29 @@
+.clients__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: auto;
+  width: 306px;
+  max-height: 472px;
+  height: 100%;
+
+  @media (max-width: 1300px) {
+    max-height: 450px;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  @media (max-width: 992px) {
+    max-height: 490px;
+  }
+
+  @media (max-height: 785px) {
+    max-height: 376px;
+  }
+
+  @media (max-height: 600px) {
+    max-height: 340px;
+    gap: 8px;
+  }
+}

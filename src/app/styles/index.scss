@@ -1,0 +1,12 @@
+@import "reset";
+@import "variables/global";
+@import "custom";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.app {
+  font: var(--font-m);
+  color: var(--primary-color);
+  background-color: white;
+  min-height: 100vh;
+}

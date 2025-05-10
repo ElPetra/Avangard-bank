@@ -1,0 +1,17 @@
+.margin {
+  margin-bottom: auto;
+  align-self: center;
+}
+
+.error_message {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 6px;
+  background: var(--primary-color-gray);
+  margin-bottom: 5px;
+}
+
+.recovery_cardItem {
+  width: 300px;
+  gap: 15px;
+}

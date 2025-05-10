@@ -1,0 +1,49 @@
+.clinets__panel_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_left,
+  &_right {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1300px) {
+    &_left,
+    &_right {
+      max-width: 300px;
+    }
+
+    &_left {
+      gap: 15px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    &_left,
+    &_right {
+      width: 100%;
+      max-width: auto;
+    }
+
+    &_left {
+      gap: 5px;
+    }
+  }
+
+  @media (max-height: 600px) {
+    flex-direction: column;
+
+    &_left,
+    &_right {
+      gap: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
